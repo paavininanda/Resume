@@ -1,1 +1,1 @@
-This is my resume which has been implemented from scratch.
+This is my responsive resume which has been implemented from scratch.

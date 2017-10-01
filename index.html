@@ -1,0 +1,525 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<title>
+		Paavini Nanda
+	</title>
+
+	<style >
+		.myImage {
+			box-sizing: border-box;
+			background-image:url('bg2.jpg');
+			background-repeat: no-repeat;
+			background-position: center;
+			border-radius: 50%;
+			height: 110px;
+			width: 110px;
+			position: relative;
+			left: 69px;
+			top: 57px;
+
+		}
+		.sidebar{
+			position: relative;
+			left: 71px;
+			width: 250px;
+		}
+		.main{
+			width: 70%;
+		}
+		.outerBox{
+			width:100%;
+			height: 200px;
+		}
+		.upperSB{
+			background-color: #1f9496;
+			height: 250px;
+		}
+		.lowerSB{
+			background-color: #2bcbce;
+			height: 1100px;
+		}
+		.namee{
+			position: relative;
+			top: 80px;
+			left: 17px;
+			font-color: white;
+		}
+		.unorderedList{
+			list-style-type: none;
+			font-size: 0.9rem;
+			line-height: 2;
+			position: relative;
+			left: -3px;
+		}
+		.headd{
+			padding-left: 37px;
+			font-size: 1rem;
+		}
+		.contact{
+			padding-top: 37px;
+			position: relative;
+			left:-13px;
+		}
+		.wrapperr{
+			display: flex;
+			margin-left:13%;
+			margin-right: 13%;
+			margin-top:2%;
+			margin-bottom:2%;
+			background-color: white;
+		}
+		.colorr{
+			color:white;
+		}
+		.education{
+			position: relative;
+			left: -10px;
+			top: 35px;
+		}
+		.greyy{
+			color:#d3e4e5;
+			line-height: 1.2;
+		}
+		.interests{
+			position: relative;
+			top: 75px;
+			left: -9px;
+		}
+		.projects{
+			position: relative;
+			left: 49px;
+			top: 45px;
+		}
+		.pro {
+			color: #1f9496;
+			font-size: 1.5rem;
+		}
+		.proin{
+			font-size: 0.98rem;
+			margin-top:15px;
+			line-height:1.7;
+		}
+		.headingg{
+			font-size: 1.1rem;
+			color:#1f9496;
+
+		}
+		section div div div:hover{
+			text-decoration: underline;
+			transition-duration:0.5s;
+			cursor:pointer;
+		}
+		.secondd{
+			top:122px;
+		}
+		.experience{
+			position: relative;
+			left:49px;
+			top:95px;
+		}
+		.invv{
+			background-color: #1f9496;
+			border-radius: 50%;
+			color: white;
+			height:35px;
+			width:35px;
+
+		}
+		.fa-briefcase:before {
+			position: relative;
+			left: 6px;
+			top: 5px;
+		}
+		.fa{
+			position: relative;
+			top: -4px;
+		}
+		.exppp{
+			position: relative;
+			top: 13px;
+		}
+		.fa-files-o:before{
+			position: relative;
+			left: 4px;
+			top: 5px;
+		}
+		.unok{
+			position: relative;
+			left: -36px;
+			top: -9px;
+		}
+		.fa-android:before{
+			position: relative;
+			left: 8px;
+			top: 3px;
+		}
+		.flexi{
+			position: relative;
+			top: 14px;
+		}
+		.progressBars{
+			width: 65%;
+			position: relative;
+			top: -250px;
+			left: 168px;
+
+		}
+		.progress{
+			margin-bottom: 16px;
+		}
+		.bgg{
+			background-color:#2bcbce !important ;
+		}
+		.academicsAnd{
+			position: relative;
+			left: 52px;
+			top: -64px;
+		}
+		.fa-book:before{
+			position: relative;
+			top:4px;
+			left:7px;
+		}
+		.posss{
+			position: relative;
+			left: 11px;
+			top: 10px;
+		}
+
+		@media only screen and (max-width: 1250px) and (min-width:1207px) {
+			.lowerSB{
+				height: 1115px;
+			}
+		}
+		@media only screen and  (max-width: 1207px) and (min-width: 1098px){
+			.lowerSB{
+				height: 1140px;
+			}
+		}
+		@media only screen and  (max-width: 1098px) and (min-width: 1087px){
+			.lowerSB{
+				height: 1175px;
+			}
+		}
+		@media only screen and  (max-width: 1087px) and (min-width: 1059px){
+			.lowerSB{
+				height: 1202px;
+			}
+		}
+		@media only screen and  (max-width: 1059px) and (min-width: 1030px){
+			.lowerSB{
+				height: 1228px;
+			}
+		}
+		@media only screen and  (max-width: 1030px)and (min-width: 977px){
+			.namee{
+				left:10px;
+			}
+			.lowerSB{
+				height: 1254px;
+			}
+		}
+		@media only screen and  (max-width: 977px) and (min-width: 680px){
+			.sidebar{
+				order:1;
+				width:100%;
+				position: static;
+			}
+			.lowerSB{
+				height: 580px;
+			}
+			.namee{
+				left:10px;
+			}
+			.main{
+				order:2;
+				width:100%;
+			}
+			.wrapperr{
+				flex-wrap: wrap;
+			}
+			.outerBox{
+				transform: translateX(30%);
+			}
+			.widdd{
+				width:82%;
+			}
+		}
+		@media only screen and  (max-width: 680px) and (min-width: 530px){
+			.sidebar{
+				order:1;
+				width:100%;
+				position: static;
+			}
+			.lowerSB{
+				height: 580px;
+			}
+			.namee{
+				left:10px;
+			}
+			.main{
+				order:2;
+				width:100%;
+			}
+			.wrapperr{
+				flex-wrap: wrap;
+			}
+			.outerBox{
+				transform: translateX(22%);
+			}
+			.widdd{
+				width:82%;
+			}
+			.progressBars{
+				width: 60%;
+			}
+			.main{
+				position:relative;
+				left:-20px;
+			}
+		}
+		@media only screen and  (max-width: 530px) and (min-width: 400px) {
+			.sidebar{
+				order:1;
+				width:100%;
+				position: static;
+			}
+			.lowerSB{
+				height: 580px;
+			}
+			.namee{
+				left:-10px;
+			}
+			.main{
+				order:2;
+				width:100%;
+				position:relative;
+				left:-20px;
+			}
+			.myImage{
+			left:40px;
+			}
+			.wrapperr{
+				flex-wrap: wrap;
+			}
+			.outerBox{
+				transform: translateX(22%);
+			}
+			.widdd{
+				width:82%;
+			}
+			.progressBars{
+				width:40%;
+			}
+		}
+		@media only screen and  (max-width: 400px){
+			.sidebar{
+				order:1;
+				width:100%;
+				position: static;
+			}
+			.lowerSB{
+				height: 580px;
+			}
+			.namee{
+				left:10px;
+			}
+			.main{
+				order:2;
+				width:100%;
+				position:relative;
+				left:-25px;
+			}
+			.wrapperr{
+				flex-wrap: wrap;
+			}
+			.outerBox{
+				transform: translateX(10%);
+				left:10px;
+			}
+			.myImage{
+				left:60px;
+			}
+			.widdd{
+				width:82%;
+			}
+			.progressBars{
+				width: 35%;
+			}
+		}
+	</style>
+</head>
+
+<body style="background-color: #f2f7f7;">
+
+	<div class="wrapperr">
+
+		<div class="main">
+			<section class="widdd">
+			<section class="projects">
+				<div>
+					<div class="pro"> <b><i class="fa fa-files-o invv invv2" aria-hidden="true"></i> &nbsp PROJECTS </b></div>
+					<div class="proin">
+						<div class="headingg" >My Shop </div> An online crockery shopping portal.
+						Has features like <b>filtering</b> the products on the basis of colour, <b>sorting</b> the items according to prices / maximum amount of discount, placing an order, cancelling a previously placed order. Its database is on Google <b>firebase</b>. So everything is loaded dynamically
+
+					</div>
+					<div class="proin">
+						<div class="headingg" >Convoys Game Of Life</div>Implemented Game Of Life - A simulation Game, using <b>Quad Trees</b> and used <b>OpenGL</b> for graphics
+					</div>
+					<div class="proin">
+						<div class="headingg">Fun with numbers </div> A project under Ms.Savita Yadav (college faculty), which consists of an app for small kids, to make them learn numbers. It uses <b>machine learning</b> for number recognition
+					</div>
+				</div>
+			</section>
+			<section class="experience">
+				<div class="pro"> <b><i class="fa fa-briefcase invv"></i> &nbsp EXPERIENCE </b></div>
+				<div class="exppp">
+					<div>
+						<a href="http://csinsit.org/" target="new">
+							<div class="headingg" >CSI, NSIT </div>
+						</a>
+					</div>
+					<div>
+						<ul class="unorderedList proin unok">
+							<li>Board Member, CSI NSIT</li>
+							<li>
+								<ul>
+									<li>Increased the membership count by 100% during the 2016 registration period</li>
+									<li>Taught Programming in C++ at weekly classes attended by <b>50-120</b> students</li>
+								</ul>
+							</li>
+							<li>Problem Setter for CSI programming events on hackerearth</li>
+						</ul>
+					</div>
+
+				</div>
+
+			</section>
+			<section class="projects secondd">
+				<div class="pro"> <b> <i class="fa fa-android invv" aria-hidden="true"></i> TECHNICAL SKILLS </b> </div>
+
+				<div class="flexi">
+					<div style="line-height:2">
+						<b>C</b> <br>
+						<b >C++</b> <br>
+						<b >Java</b><br>
+						<b >Python</b><br>
+						<b >HTML &amp CSS</b><br>
+						<b >Android Studio</b><br>
+						<b >Google Firebase</b><br>
+						<b >Matlab</b><br>
+
+					</div>
+					<div class="progressBars">
+						<div class="progress">
+							<div class="progress-bar bgg" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar  bgg" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bgg" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bgg" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bgg" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bgg" role="progressbar" style="width: 88%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bgg" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bgg" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="academicsAnd">
+				<div>
+					<div class="pro"> <b><i class="fa fa-book invv" aria-hidden="true"></i> &nbsp ACADEMIC AND CO-CURRICULAR ACTIVITIES </b></div>
+					<div class="posss ">
+						<ul class="proin unok">
+							<li>In top 5 in three semesters</li>
+							<li>Secured All India Rank of <b>1626</b> in JEE mains out of 14 lack students</li>
+							<li><b>Cultural captain</b> of school for session 2014-2015</li>
+							<li>Won second prize at NASA Space settlement design competition</li>
+
+						</ul>
+					</div>
+				</div>
+			</section>
+			</section>
+		</div>
+		<div class="sidebar">
+			<div class="upperSB">
+				<div class="outerBox">
+					<div class="myImage">
+
+					</div>
+					<div class="namee">
+						<h4 class="colorr" style="font-size:2.2rem;">Paavini Nanda</h4>
+					</div>
+				</div>
+			</div>
+			<div class="lowerSB">
+				<div class="contact colorr">
+					<ul class="unorderedList">
+						<li> <i class="fa fa-envelope"></i> &nbsp paavininanda@gmail.com</li>
+						<li> <i class="fa fa-phone"></i> &nbsp 9872169809</li>
+						<li> <i class="fa fa-linkedin"></i>  &nbsp linkedin_link</li>
+						<li> <i class="fa fa-github"></i>  &nbsp github link</li>
+					</ul>
+				</div>
+				<div class="education colorr">
+					<h3 class="headd">
+						<b> EDUCATION </b>
+					</h3>
+					<ul class="unorderedList">
+						<li>
+							<i class="fa fa-graduation-cap" aria-hidden="true"></i> B.E. Computer Engineering<br>
+							<div class="greyy">NSIT,Delhi<br>
+								2015-2019 </div>
+						</li>
+						<li>
+							<i class="fa fa-university" aria-hidden="true"></i> Class XII <br>
+							<div class="greyy"> Apeejay School <br>
+								2013-2015 </div>
+						</li>
+						<i class="fa fa-university" aria-hidden="true"></i> Class X <br>
+						<div class="greyy" >Apeejay School <br>
+							2012-2013 <br> </div>
+						</li>
+
+					</ul>
+				</div>
+				<div class="interests colorr">
+					<h3 class="headd">
+						<b> INTERESTS </b>
+					</h3>
+					<ul class="unorderedList">
+						<li> <i class="fa fa-music" aria-hidden="true"></i> &nbsp Listening to music</li>
+						<li><i class="fa fa-quora" aria-hidden="true"></i> &nbsp Reading quora</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</body>
+</html>
